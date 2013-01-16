@@ -59,6 +59,14 @@
             ->showValues(false)
             ->showLabel(false);
         echo $graph->render();
+
+        $graph = new SimpleBars();
+        $graph
+            ->setTitle("Floats and axis intercept")
+            ->setData(array(5 => 0.3826, 0.9367, 0.1894, 0.730))
+            ->setMaxValue(1)
+            ->setPrecision(2);
+        echo $graph->render();
         ?>
 
         <div class="styled">
