@@ -1,0 +1,55 @@
+.graph {
+    float: left;
+    clear: left;
+}
+
+.graph * {
+    margin: 0;
+    padding: 0;
+}
+
+.graph .title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.graph .data {
+    list-style-type: none;
+    position: relative;
+    border-bottom: 2px solid #333;
+    overflow: hidden;
+}
+
+.graph .bar {
+    position: absolute;
+    bottom: 0;
+    background: #a0a0a0;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+}
+
+.graph .value {
+    margin-top: 5px;
+    display: block;
+    color: #ffffff;
+    font-size: 10px;
+    text-align: center;
+}
+
+.graph .outer {
+    margin-top: -15px;
+    color: #000000;
+}
+
+.graph .label {
+    margin-top: 5px;
+    height: 1.5em;
+    list-style-type: none;
+}
+
+.graph .label li {
+    float: left;
+    text-align: center;
+    font-size: 12px;
+}
