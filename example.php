@@ -31,14 +31,16 @@
         include("SimpleBars.php");
 
         $graph = new SimpleBars();
-        $graph->setTitle("Manually chosen maximum")
+        $graph
+            ->setTitle("Manually chosen maximum")
             ->setData(array(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10))
             ->setOuterMin(50)
             ->setMaxValue(25);
         echo $graph->render();
 
         $graph = new SimpleBars();
-        $graph->setTitle("Without values")
+        $graph
+            ->setTitle("Without values")
             ->setData(array(6, 24, 11, 26, 32, 6, 39, 37, 15, 12, 30, 24, 2, 38, 14))
             ->setBarWidth(20)
             ->setBarMargin(5)
@@ -46,11 +48,11 @@
         echo $graph->render();
 
         $graph = new SimpleBars();
-        $graph->setTitle("Custom indices")->setData(array("a" => 15, "b" => 26, "C" => 2, "foo" =>28, 3 => 13));
-        echo $graph->render();
+        echo $graph->setTitle("Custom indices")->setData(array("a" => 15, "b" => 26, "C" => 2, "foo" =>28, 3 => 13))->render();
 
         $graph = new SimpleBars();
-        $graph->setTitle("Plain style")
+        $graph
+            ->setTitle("Plain style")
             ->setData(array(14, 6, 26))
             ->setBarWidth(60)
             ->setBarMargin(10)
@@ -62,7 +64,8 @@
         <div class="styled">
             <?php
             $graph = new SimpleBars();
-            $graph->setTitle("Styled")
+            $graph
+                ->setTitle("Styled")
                 ->setData(array("A" => 7, "B" => 39, "C" => 2, "D" => 26, "E" => 12))
                 ->setBarWidth(40)
                 ->setBarMargin(10);
